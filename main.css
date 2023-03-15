@@ -1,0 +1,154 @@
+
+
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;500;600;800&display=swap');
+
+
+* {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+    font-family: 'Open Sans', sans-serif;
+}
+body {
+    display: flex;
+}
+.forms{
+    display: flex;
+    margin: 20rem auto;
+    max-width: 90%;
+    flex-direction: row;
+    justify-content:space-between;
+
+}
+.container-content{
+    flex-grow: 1;
+    display: flex;
+    gap: 2rem;
+    flex-direction: column;
+    padding: 1rem;
+}
+
+.container-content h1{
+    font-weight: 800;
+}
+.container-content h3 {
+    color: #f19620e1;
+    margin-left: 3.8rem;
+}
+.container-content p{
+    line-height: 1.7rem;
+    font-size: 1rem;
+    display: flex;
+    align-items: center;
+}
+.container-content .contact {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+}
+.contact .contact-cards{
+    display: flex;
+    max-width: 45%;
+    align-items: center;
+}
+.contact .contact-cards i{
+    font-size: xx-large;
+    color: #F19820;
+    background-color: #f1962028;
+    margin-right: 1rem;
+}
+.contact .contact-cards .content{
+    font-size: 1.2rem;
+    font-weight: 600;
+    letter-spacing: -0.5px;
+}
+/* .contact .contact-cards i */
+.container-forms{
+    max-width: 45%;
+}
+.container-forms form{
+    display: flex;
+    justify-content: space-around;
+    padding: 1rem;
+    flex-wrap: wrap;
+    gap: 1rem;
+    flex-grow: 1;
+}
+ input{
+    padding: 0.4rem;
+    width: calc(50% - 1rem);
+    height: 3rem;
+    font-size: 18px;
+
+}
+input:focus{
+    outline: 3px solid #f1962069;
+}
+
+.container-forms textarea {
+    width: calc(100% - .5rem);
+    padding: 1rem;
+    font-size: 18px;
+}
+.container-forms textarea:focus{
+    outline: 3px solid #f1962069;
+}
+input[type='submit']{
+    background-color: #F19820;
+    flex-grow: 1;
+    cursor: pointer;
+    border: none;
+}
+input[type='submit']:hover {
+    background-color: #f69518;
+    font-weight: 600;
+    border: none;
+    
+}
+
+@media screen and (max-width:1000px){
+
+    .forms{
+        flex-wrap:wrap;
+        justify-content: center;
+    }
+        .container-forms{
+        max-width: 90%;
+        }
+        .container-content {
+            max-width: 90%;
+        }
+ input {
+     padding: 0.3rem;
+     width: calc(50% - 1.1rem);
+     height: 2.5rem;
+     font-size: 16px;
+
+ }
+}
+@media screen and (max-width:764px){
+    body{
+        font-size:calc(100% - 20%);
+    }
+    .forms{
+        flex-wrap:wrap;
+        justify-content: center;
+    }
+        .container-forms{
+        max-width: 95%;
+        }
+        .container-content {
+            max-width: 95%;
+        }
+ input {
+     padding: 0.3rem;
+     width: calc(50% - 1.1rem);
+     height: 2.5rem;
+     font-size: 14px;
+
+ }
+ .container-forms textarea{
+    font-size: 14px;
+    height: 10rem;
+ }
+}
